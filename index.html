@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Luxury Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="nameLogo">
+                <h2>LUX-SHOP</h2>
+                <img src="../Images/arno-senoner-JNxMtUFOUHs-unsplash.jpg" alt="" width="55" style="border-radius: 50%;">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">New Arrival</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Reviews</a></li>
+            </ul>
+            <div class="cartUser">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="./cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <div id="cartAmount" class="cartAmount">0</div>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+            </div> 
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="lending">
+            <div class="storeLending">
+                <h4>SHOP NOW</h4>
+                <h2>New Arrival of</h2>
+                <h2>Fresh Products</h2>
+                <a href="">Shop Now</a>
+            </div>
+            <img src="../Images/dave-goudreau-0uH7NLMaMtQ-unsplash.jpg" alt="" width="400">           
+        </div>
+    </section>
+
+    <section id="newArrivalSection" class="newArrivalSection">
+        <h2 class="secTitle">New<span>Arrival</span></h2>
+        <div id="imageScrollBox" class="imageScrollBox">
+            <div>
+                <img src="..//Images/shoes/shoe 13.jpg" alt="">
+            </div>
+            <div>
+                <img src="../Images/hand bags/beg 2.jpg" alt="" >
+            </div>
+            <div>
+                <img src="../Images/hand bags/beg 10.jpg" alt="" >
+            </div>
+            <div>
+                <img src="../Images/hand bags/beg 3.jpg" alt="" >
+            </div>
+            <div>
+                <img src="../Images/watches/watch 5.jpg" alt="">
+            </div>
+            <div>
+                <img src="..//Images/shoes/shoe 17.jpg" alt="">
+            </div>
+            <div>
+                <img src="..//Images/shoes/shoe 11.jpg" alt="">
+             </div>
+        </div>
+        <i id="scrollLeft" class="fa-solid fa-chevron-left"></i>
+        <i id="scrollRight"  class="fa-solid fa-chevron-right"></i>
+    </section>
+        
+    <section class="shopSection">
+        <h2 class="secTitle">Our<span>Products</span></h2>
+        <div id="shop" class="shop">
+           
+        </div>
+    </section>
+        
+    
+    
+    <script src="shopdata.js"></script> 
+    <script src="main.js"></script>
+
+</body>
+</html>

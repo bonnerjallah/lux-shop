@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1e6;
+}
+
+/**
+* ! NAV BAR STYLE
+**/
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fbc4ab;
+}
+
+.nameLogo{
+    display: flex;
+}
+
+.nameLogo h2{
+    margin-top: 20px;
+    color: #723d46;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%
+}
+
+ul li{
+    margin: 20px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: #432818;
+}
+
+.cartUser{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    color: whitesmoke;
+}
+
+.cartUser a{
+    color: whitesmoke;
+}
+
+.cartAmount{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 9px;
+    left: 100px;
+}
+
+/**
+*! landing section
+**/
+
+.lending{
+    height: 550px;
+    width: 100%;
+    display: flex;
+}
+
+.storeLending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    width: 300px;
+    margin-left: 130px;
+    color: #432818;
+}
+
+.storeLending h2 {
+    font-size: 2.5rem;
+}
+
+.storeLending a{
+    background-color: orange;
+    width: 35%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home .lending img{
+    width: 70%;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+/**
+*! Image Scroll Box Style
+**/
+
+.newArrivalSection{
+    position: relative;
+}
+
+.newArrivalSection h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.newArrivalSection .secTitle{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.secTitle span{
+    color: whitesmoke;
+    margin-left: 5px;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.imageScrollBox{
+    position: relative;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.imageScrollBox img{
+    height: 450px;
+    width: 350px
+}
+
+.fa-chevron-left{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 250px;
+    margin-left: 25px;
+    color: rgb(231, 98, 98);
+    cursor: pointer;
+    background-color: #723d46;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-chevron-right{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 250px;
+    margin-left: 1205px;
+    color: rgb(231, 98, 98);
+    cursor: pointer;
+    background-color: #723d46;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/**
+*! Shop Section Box Style
+**/
+
+.shopSection{
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.shopSection .secTitle{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 222px);
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid black;
+    gap: 50px;
+    justify-content: center;
+}
+
+.item  {
+    border-radius: 5px ;
+    overflow: hidden;
+    border: 1px solid black;
+    
+}
+
+.item img {
+    border-radius: 5px;
+    width: 221px;
+    height: 221px;
+    transition: transform 0.2s ease;
+}
+  
+.item img:hover {
+    transform: scale(1.2);
+}
+
+.details{
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.bttn{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price h2 {
+    color: green;
+}
+
+.fa-minus{
+    color: red;
+}
+
+.fa-plus{
+    color: green;
+}
+
+/**
+*! CART STYLE
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.homeBttn
+.checkout
+.removeAll {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+}
+
+.removeAll{
+    background-color: red;
+}
+
+.fa-x{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/**
+* ! STYLE RULE FOR SHOPPING CART
+**/
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+/**
+* ! STYLE RULE FOR CART ITEM
+**/
+
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
